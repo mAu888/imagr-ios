@@ -16,28 +16,6 @@ class FlickrImagesProvider : ImagesDataProvider {
         self.session = session
     }
     
-    func rac_imagesForQueryString(queryString: String) -> RACSignal {
-        return RACSignal.createSignal { subscriber -> RACDisposable! in
-            let task = self.session.dataTaskWithURL(self.requestURL(queryString)) {
-                data, response, error in
-                if let e = error {
-                    subscriber.sendError(e)
-                } else {
-                    let images = self.images(fromData:data)
-                    subscriber.sendNext(images)
-                    subscriber.sendCompleted()
-                }
-            }
-            
-            task.resume()
-            return RACDisposable {
-                if task.state == .Running || task.state == .Suspended {
-                    task.cancel()
-                }
-            }
-        }
-    }
-    
     func requestURL(queryString: String) -> NSURL {
         let sanitized = queryString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
         let urlString = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(FlickrAPIKey)&text=\(sanitized!)&format=json&nojsoncallback=1"
