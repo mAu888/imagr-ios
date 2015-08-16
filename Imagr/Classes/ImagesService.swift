@@ -34,14 +34,14 @@ class ImagesService {
             .map {
                 let tuple = $0 as! RACTuple
                 return tuple.rac_sequence
-                .filter { images -> Bool in
-                    return !images.isKindOfClass(NSNull)
-                }
-                .foldLeftWithStart([], reduce: {
-                    let first = $0 as! [Image]
-                    let second = $1 as! [Image]
-                    return first + second
-                })
+                    .filter { images -> Bool in
+                        return !images.isKindOfClass(NSNull)
+                    }
+                    .foldLeftWithStart([], reduce: {
+                        let first = $0 as! [Image]
+                        let second = $1 as! [Image]
+                        return first + second
+                    })
         }
     }
 }

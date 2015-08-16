@@ -2,6 +2,8 @@
 
 This is a demo project showing the benefit of combining signals when fetching data from different sources resolving into the same entities. The application queries both the flickr and the 500px API to fetch photos for a given query string.
 
+Besides that it was a little training for me trying ReactiveCocoa in combination with Swift.
+
 ## Getting started
 
 * Install the latest Beta of Xcode 7

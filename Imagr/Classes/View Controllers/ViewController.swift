@@ -19,7 +19,7 @@ class ViewController : UIViewController, UICollectionViewDataSource, UICollectio
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let imagesSignal = self.searchQueryTextField
+        let imagesSignal = searchQueryTextField
             .rac_signalForControlEvents(.EditingChanged)
             .map { textField -> AnyObject! in
                 return (textField as! UITextField).text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()) ?? ""
