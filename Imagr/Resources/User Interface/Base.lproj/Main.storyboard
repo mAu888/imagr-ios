@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Imagr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="500" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search for images, e.g. type 'sunset'" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ye5-ua-HxL" userLabel="Search Query Text Field">
+                                <rect key="frame" x="20" y="40" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YUH-e0-GPk">
+                                <rect key="frame" x="0.0" y="78" width="600" height="522"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZCP-X2-3eF">
+                                    <size key="itemSize" width="75" height="75"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCollectionCellIdentifier" id="jkx-Yj-j55" customClass="ImageCollectionCell" customModule="Imagr" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="0.0" width="75" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4dF-Ve-Xey">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="4dF-Ve-Xey" firstAttribute="top" secondItem="jkx-Yj-j55" secondAttribute="top" id="2M7-qr-GKu"/>
+                                            <constraint firstAttribute="bottom" secondItem="4dF-Ve-Xey" secondAttribute="bottom" id="3y2-fX-9Ed"/>
+                                            <constraint firstAttribute="trailing" secondItem="4dF-Ve-Xey" secondAttribute="trailing" id="q9b-Df-Sbt"/>
+                                            <constraint firstItem="4dF-Ve-Xey" firstAttribute="leading" secondItem="jkx-Yj-j55" secondAttribute="leading" id="zxu-0O-hd5"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="4dF-Ve-Xey" id="gj3-2v-8Te"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5pg-1Y-poA"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9ae-Rp-TXS"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ye5-ua-HxL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="4Bm-yy-2Tq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YUH-e0-GPk" secondAttribute="bottom" id="6KR-ye-1Gk"/>
+                            <constraint firstItem="YUH-e0-GPk" firstAttribute="top" secondItem="ye5-ua-HxL" secondAttribute="bottom" constant="8" id="8b4-X3-Ebd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ye5-ua-HxL" secondAttribute="trailing" id="Qhm-F9-97r"/>
+                            <constraint firstAttribute="trailing" secondItem="YUH-e0-GPk" secondAttribute="trailing" id="h4q-EJ-OgU"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ye5-ua-HxL" secondAttribute="leading" id="m6M-OK-JP6"/>
+                            <constraint firstItem="YUH-e0-GPk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="x99-Bf-SZb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="YUH-e0-GPk" id="KaH-BX-P8Z"/>
+                        <outlet property="searchQueryTextField" destination="ye5-ua-HxL" id="Me1-wU-J3b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="396"/>
+        </scene>
+    </scenes>
+</document>
