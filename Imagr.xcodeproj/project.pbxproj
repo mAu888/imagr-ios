@@ -14,8 +14,6 @@
 		5C80413F1B6E1675004D7987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C80412F1B6E1675004D7987 /* Assets.xcassets */; };
 		5C8041401B6E1675004D7987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C8041311B6E1675004D7987 /* LaunchScreen.storyboard */; };
 		5C8041411B6E1675004D7987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C8041331B6E1675004D7987 /* Main.storyboard */; };
-		5C80414B1B6E16DF004D7987 /* ImagrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8041491B6E16DF004D7987 /* ImagrTests.m */; };
-		5C8041501B6E16EC004D7987 /* ImagrUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C80414D1B6E16EC004D7987 /* ImagrUITests.m */; };
 		5C8041541B6E1A6F004D7987 /* ImagesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8041531B6E1A6F004D7987 /* ImagesDataProvider.swift */; };
 		5C8041561B6E1AF6004D7987 /* ImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8041551B6E1AF6004D7987 /* ImagesService.swift */; };
 		5C8041581B6E228D004D7987 /* FlickrImagesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8041571B6E228D004D7987 /* FlickrImagesProvider.swift */; };
@@ -28,23 +26,6 @@
 		5CC178FD1B80F953002DEEB0 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC178FC1B80F953002DEEB0 /* Keys.swift */; };
 		B1F3B51D1B8072EE00539BDA /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B51C1B8072EE00539BDA /* ImageCollectionCell.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5C8041071B6E1196004D7987 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5C8040E51B6E1196004D7987 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5C8040EC1B6E1196004D7987;
-			remoteInfo = Imagr;
-		};
-		5C8041121B6E1196004D7987 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5C8040E51B6E1196004D7987 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5C8040EC1B6E1196004D7987;
-			remoteInfo = Imagr;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5C80412C1B6E158B004D7987 /* Embed Frameworks */ = {
@@ -63,18 +44,12 @@
 
 /* Begin PBXFileReference section */
 		5C8040ED1B6E1196004D7987 /* Imagr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imagr.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C8041061B6E1196004D7987 /* ImagrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C8041111B6E1196004D7987 /* ImagrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8041231B6E158A004D7987 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		5C8041241B6E158A004D7987 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		5C80412F1B6E1675004D7987 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C8041321B6E1675004D7987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C8041341B6E1675004D7987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C8041361B6E1675004D7987 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C8041471B6E16DF004D7987 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C8041491B6E16DF004D7987 /* ImagrTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagrTests.m; sourceTree = "<group>"; };
-		5C80414D1B6E16EC004D7987 /* ImagrUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagrUITests.m; sourceTree = "<group>"; };
-		5C80414F1B6E16EC004D7987 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C8041531B6E1A6F004D7987 /* ImagesDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesDataProvider.swift; sourceTree = "<group>"; };
 		5C8041551B6E1AF6004D7987 /* ImagesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesService.swift; sourceTree = "<group>"; };
 		5C8041571B6E228D004D7987 /* FlickrImagesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrImagesProvider.swift; sourceTree = "<group>"; };
@@ -99,20 +74,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C8041031B6E1196004D7987 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C80410E1B6E1196004D7987 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -122,8 +83,6 @@
 				5C8041231B6E158A004D7987 /* ReactiveCocoa.framework */,
 				5C8041241B6E158A004D7987 /* Result.framework */,
 				5C8040EF1B6E1196004D7987 /* Imagr */,
-				5C8041091B6E1196004D7987 /* ImagrTests */,
-				5C8041141B6E1196004D7987 /* ImagrUITests */,
 				5C8040EE1B6E1196004D7987 /* Products */,
 				AC31EBB069A2DE82BFD1E0AE /* Frameworks */,
 			);
@@ -133,8 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				5C8040ED1B6E1196004D7987 /* Imagr.app */,
-				5C8041061B6E1196004D7987 /* ImagrTests.xctest */,
-				5C8041111B6E1196004D7987 /* ImagrUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,24 +105,6 @@
 				5C80412D1B6E1675004D7987 /* Resources */,
 			);
 			path = Imagr;
-			sourceTree = "<group>";
-		};
-		5C8041091B6E1196004D7987 /* ImagrTests */ = {
-			isa = PBXGroup;
-			children = (
-				5C8041461B6E16DF004D7987 /* Ancillary Files */,
-				5C8041481B6E16DF004D7987 /* Tests */,
-			);
-			path = ImagrTests;
-			sourceTree = "<group>";
-		};
-		5C8041141B6E1196004D7987 /* ImagrUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5C80414E1B6E16EC004D7987 /* Ancillary Files */,
-				5C80414C1B6E16EC004D7987 /* Tests */,
-			);
-			path = ImagrUITests;
 			sourceTree = "<group>";
 		};
 		5C80412D1B6E1675004D7987 /* Resources */ = {
@@ -234,38 +173,6 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		5C8041461B6E16DF004D7987 /* Ancillary Files */ = {
-			isa = PBXGroup;
-			children = (
-				5C8041471B6E16DF004D7987 /* Info.plist */,
-			);
-			path = "Ancillary Files";
-			sourceTree = "<group>";
-		};
-		5C8041481B6E16DF004D7987 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				5C8041491B6E16DF004D7987 /* ImagrTests.m */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		5C80414C1B6E16EC004D7987 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				5C80414D1B6E16EC004D7987 /* ImagrUITests.m */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		5C80414E1B6E16EC004D7987 /* Ancillary Files */ = {
-			isa = PBXGroup;
-			children = (
-				5C80414F1B6E16EC004D7987 /* Info.plist */,
-			);
-			path = "Ancillary Files";
-			sourceTree = "<group>";
-		};
 		5C8041591B6E4329004D7987 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,42 +228,6 @@
 			productReference = 5C8040ED1B6E1196004D7987 /* Imagr.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5C8041051B6E1196004D7987 /* ImagrTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5C80411D1B6E1196004D7987 /* Build configuration list for PBXNativeTarget "ImagrTests" */;
-			buildPhases = (
-				5C8041021B6E1196004D7987 /* Sources */,
-				5C8041031B6E1196004D7987 /* Frameworks */,
-				5C8041041B6E1196004D7987 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5C8041081B6E1196004D7987 /* PBXTargetDependency */,
-			);
-			name = ImagrTests;
-			productName = ImagrTests;
-			productReference = 5C8041061B6E1196004D7987 /* ImagrTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5C8041101B6E1196004D7987 /* ImagrUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5C8041201B6E1196004D7987 /* Build configuration list for PBXNativeTarget "ImagrUITests" */;
-			buildPhases = (
-				5C80410D1B6E1196004D7987 /* Sources */,
-				5C80410E1B6E1196004D7987 /* Frameworks */,
-				5C80410F1B6E1196004D7987 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5C8041131B6E1196004D7987 /* PBXTargetDependency */,
-			);
-			name = ImagrUITests;
-			productName = ImagrUITests;
-			productReference = 5C8041111B6E1196004D7987 /* ImagrUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -369,14 +240,6 @@
 				TargetAttributes = {
 					5C8040EC1B6E1196004D7987 = {
 						CreatedOnToolsVersion = 7.0;
-					};
-					5C8041051B6E1196004D7987 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = 5C8040EC1B6E1196004D7987;
-					};
-					5C8041101B6E1196004D7987 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = 5C8040EC1B6E1196004D7987;
 					};
 				};
 			};
@@ -394,8 +257,6 @@
 			projectRoot = "";
 			targets = (
 				5C8040EC1B6E1196004D7987 /* Imagr */,
-				5C8041051B6E1196004D7987 /* ImagrTests */,
-				5C8041101B6E1196004D7987 /* ImagrUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -408,20 +269,6 @@
 				5C8041411B6E1675004D7987 /* Main.storyboard in Resources */,
 				5C80413F1B6E1675004D7987 /* Assets.xcassets in Resources */,
 				5C8041401B6E1675004D7987 /* LaunchScreen.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C8041041B6E1196004D7987 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C80410F1B6E1196004D7987 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,36 +293,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C8041021B6E1196004D7987 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C80414B1B6E16DF004D7987 /* ImagrTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C80410D1B6E1196004D7987 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C8041501B6E16EC004D7987 /* ImagrUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5C8041081B6E1196004D7987 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5C8040EC1B6E1196004D7987 /* Imagr */;
-			targetProxy = 5C8041071B6E1196004D7987 /* PBXContainerItemProxy */;
-		};
-		5C8041131B6E1196004D7987 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5C8040EC1B6E1196004D7987 /* Imagr */;
-			targetProxy = 5C8041121B6E1196004D7987 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5C8041311B6E1675004D7987 /* LaunchScreen.storyboard */ = {
@@ -612,54 +430,6 @@
 			};
 			name = Release;
 		};
-		5C80411E1B6E1196004D7987 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ImagrTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.mauriciohanika.ImagrTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Imagr.app/Imagr";
-			};
-			name = Debug;
-		};
-		5C80411F1B6E1196004D7987 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ImagrTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.mauriciohanika.ImagrTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Imagr.app/Imagr";
-			};
-			name = Release;
-		};
-		5C8041211B6E1196004D7987 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ImagrUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.mauriciohanika.ImagrUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Imagr;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		5C8041221B6E1196004D7987 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ImagrUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.mauriciohanika.ImagrUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Imagr;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 		5CC178F81B80EDA9002DEEB0 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -714,30 +484,6 @@
 			};
 			name = Profile;
 		};
-		5CC178FA1B80EDA9002DEEB0 /* Profile */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ImagrTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.mauriciohanika.ImagrTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Imagr.app/Imagr";
-			};
-			name = Profile;
-		};
-		5CC178FB1B80EDA9002DEEB0 /* Profile */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ImagrUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.mauriciohanika.ImagrUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Imagr;
-				USES_XCTRUNNER = YES;
-			};
-			name = Profile;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -757,26 +503,6 @@
 				5C80411B1B6E1196004D7987 /* Debug */,
 				5C80411C1B6E1196004D7987 /* Release */,
 				5CC178F91B80EDA9002DEEB0 /* Profile */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5C80411D1B6E1196004D7987 /* Build configuration list for PBXNativeTarget "ImagrTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C80411E1B6E1196004D7987 /* Debug */,
-				5C80411F1B6E1196004D7987 /* Release */,
-				5CC178FA1B80EDA9002DEEB0 /* Profile */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5C8041201B6E1196004D7987 /* Build configuration list for PBXNativeTarget "ImagrUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C8041211B6E1196004D7987 /* Debug */,
-				5C8041221B6E1196004D7987 /* Release */,
-				5CC178FB1B80EDA9002DEEB0 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
